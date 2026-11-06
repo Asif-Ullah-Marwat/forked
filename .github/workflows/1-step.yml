@@ -119,7 +119,7 @@ jobs:
   post_next_step_content:
     name: Post next step content
     needs: [find_exercise, check_step_work]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
