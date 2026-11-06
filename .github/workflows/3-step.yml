@@ -23,7 +23,7 @@ jobs:
 
   check_step_work:
     name: Check step work
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [find_exercise]
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
